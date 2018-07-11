@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:NoNamespaceSchemaLocation="http://www.ehcache.org/ehcache.xsd"
+	updateCheck="true" monitoring="autodetect" dynamicConfig="true">
+
+	<cache name="tasks"
+		maxElementsInMemory="10000"
+		maxElementsOnDisk="1000000"
+		eternal="false"
+		overflowToDisk="true"
+		diskPersistent="true"
+		diskSpoolBufferSizeMB="20"
+		memoryStoreEvictionPolicy="FIFO"
+		transactionMode="off">
+	</cache>
+	
+</ehcache>
