@@ -11,7 +11,7 @@ public class StudentService {
 	@Autowired
 	private AsyncService asyncService;
 
-	public StudentDto save(StudentDto dto) throws InterruptedException {
+	public StudentDto save(StudentDto dto) throws Exception {
 		asyncService.save(dto);
 		return dto;
 	}
